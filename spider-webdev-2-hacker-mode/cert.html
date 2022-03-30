@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Certificate</title>
+    <link rel="stylesheet" href="quiz.css" />
+  </head>
+  <body>
+    <div class="border">
+      <div
+        style="
+          height: 550px;
+          text-align: center;
+          background-color: aliceblue;
+          border: 5px solid white;
+        "
+      >
+        <span style="font-size: 50px; font-weight: bold"
+          >Certificate of Completion</span
+        >
+        <br /><br />
+        <span style="font-size: 25px"><i>This is to certify that</i></span>
+        <br /><br />
+        <span style="font-size: 30px"><b class="name"></b></span><br /><br />
+        <span style="font-size: 25px"><i>has completed the quiz</i></span>
+        <br /><br />
+        <span class="topic">Do you know corona??</span>
+        <br /><br />
+        <span style="font-size: 20px">with score of <b class="grade"></b>/20</span>
+        <br /><br /><br /><br />
+        <span style="font-size: 25px"><i>dated</i></span
+        ><br />
+        <div class="date"></div>
+      </div>
+    </div>
+    <button onclick="window.print()">Print</button>
+    <script>
+      document.querySelector('.date').innerHTML = String(
+        new Date().toDateString()
+      );
+      document.querySelector('.name').innerHTML = window.location.hash.slice(1).split('%20').join(" ");
+      document.querySelector('.grade').innerHTML = window.location.search.slice(
+        7
+      ).slice(0,4);
+    </script>
+  </body>
+</html>

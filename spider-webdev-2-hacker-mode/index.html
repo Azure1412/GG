@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>QUIZ APP</title>
+	<link rel="stylesheet" type="text/css" href="quiz.css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+	  >
+	  <div class="parent">
+        <div onclick="curr(this)" class="grid div1">1</div>
+        <div onclick="curr(this)" class="grid div2">2</div>
+        <div onclick="curr(this)" class="grid div3">3</div>
+        <div onclick="curr(this)" class="grid div4">4</div>
+        <div onclick="curr(this)" class="grid div5">5</div>
+        <div onclick="curr(this)" class="grid div6">6</div>
+        <div onclick="curr(this)" class="grid div7">7</div>
+        <div onclick="curr(this)" class="grid div8">8</div>
+        <div onclick="curr(this)" class="grid div9">9</div>
+        <div onclick="curr(this)" class="grid div10">10</div>
+      </div>
+    </div>
+    </div>
+    <div id="main">
+		<div class="prompt-overlay">
+			<div class="prompt">
+				<div class="header">
+					Welcome. . . .
+        </div>
+        <div class="con">
+
+            Your name here please<br>
+            <input class="name" type="text">
+
+        </div>
+				<div class="footer">
+					<button id="go">
+					Let's get going
+				</button>
+				</div>
+				
+			</div>
+		</div>
+      <span style="font-size: 30px; cursor: pointer" class="caret" onclick="openNav()"
+        >&#8250;</span
+      >
+      <div id="quiz-area">
+        <p id="quiz-title">Do you know Corona??</p>
+        <form id="quiz-form">
+          <div id="question-display"></div>
+          <div id="option-display"></div>
+        </form>
+        <button id="next-btn">START QUIZ</button>
+        <div id="result-panel"></div>
+      </div>
+      <span id="time"></div>
+    <script type="text/javascript" src="quiz.js"></script>
+  </body>
+</html>

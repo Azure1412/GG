@@ -1,0 +1,25 @@
+{
+  "name": "My-first-quiz-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "quiz.js",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^7.7.0",
+    "eslint-config-google": "^0.14.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ProfJigsaw/My-first-quiz-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ProfJigsaw/My-first-quiz-app/issues"
+  },
+  "homepage": "https://github.com/ProfJigsaw/My-first-quiz-app#readme"
+}
